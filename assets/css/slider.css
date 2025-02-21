@@ -1,0 +1,129 @@
+/* === Google Font Import - Poppins === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+section {
+  position: relative;
+  height: 440px;
+  padding: 15px;
+  padding: 0 70px;
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card::before {
+  position: absolute;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 100;
+  
+}
+section .card .image {
+  height: 188px;
+  width: 255px;
+
+}
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.card .name-profession {
+  flex-direction: column;
+  margin-top: 15px;
+}
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 130px;
+}
+.name-profession i{
+  margin:0px 10px;
+  font-size: 18px;
+}
+.name-detail{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.name-detail .petType{
+  padding-right: 50px;
+  font-size: 15px;
+}
+.name-detail .vacin{
+  font-size: 15px;
+}
+
+.btnAdopt {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.btnAdopt button {
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 8px 65px;
+  border-radius: 20px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btnAdopt button:hover {
+  background: var(--secondary-color);
+}
+.swiper-pagination {
+  position: absolute;
+}
+.swiper-pagination-bullet {
+ 
+  border-radius: 25px;
+  background: var(--primary-color);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color:var(--secondary-color);
+}
+/* Responsive media query code for small screens */
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
